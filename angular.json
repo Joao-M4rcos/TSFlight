@@ -33,6 +33,14 @@
             "scripts": []
           },
           "configurations": {
+            "hmr": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.hmr.ts"
+                }
+              ]
+            },
             "production": {
               "fileReplacements": [
                 {
@@ -68,6 +76,10 @@
             "browserTarget": "TSFlightApp:build"
           },
           "configurations": {
+            "hmr": {
+              "hmr": true,
+              "browserTarget": "TSFlightApp:build:hmr"
+            },
             "production": {
               "browserTarget": "TSFlightApp:build:production"
             }
